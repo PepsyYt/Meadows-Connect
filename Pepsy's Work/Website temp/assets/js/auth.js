@@ -31,12 +31,11 @@ function showMessage(message, divId) {
     messageDiv.style.opacity = 1;
     setTimeout(() => {
         messageDiv.style.opacity = 0;
-        // messageDiv.style.display = 'none';
     }, 5000);
 }
 
 // function to sign up the user with username email and password
-const signUp = document.getElementById('signUp-email');
+const signUp = document.getElementById('submit-signUp-email');
 signUp.addEventListener('click', async (event) => {
     event.preventDefault();
 

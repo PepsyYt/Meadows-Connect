@@ -1,0 +1,37 @@
+Location:
+Runwal Gardens, Andheri (W) - DN Nagar Metro Station, Mumbai, Maharashtra 400068
+
+Society Structure:
+Comprises 5 blocks
+Flats have doors facing North, South, East, or West
+Rent Prices:
+1 BHK: ₹18,000
+2 BHK: ₹25,000
+3 BHK: ₹32,000
+Direction Benefits:
+North-Facing: Offers more natural light in the morning
+South-Facing: Receives sunlight throughout the day and is warmer
+East-Facing: Ideal for morning sunlight
+West-Facing: Gets evening sunlight with sea view
+Flat Features:
+Number of Bedrooms: Available flats - 1 BHK, 2 BHK, 3 BHK
+Additional Features: Balcony, garden available
+Floor Number: 70 floors in each block
+Amenities: Parking, gym, 24/7 security
+Example:
+Block A: 5 flats available for rent and 3 for buying
+
+2 BHK Flat in Block A
+North-facing door
+Includes a balcony with a garden view
+Amenities: Gym, parking, 24/7 security
+3 BHK Flat in Block A
+South-facing door
+Includes a balcony with a garden view
+Amenities: Gym, parking, 24/7 security
+3 BHK Flat in Block A
+West-facing door
+Includes a balcony with a sea view
+Amenities: Gym, parking, 24/7 security
+Visuals:
+Images and further details provided to give a comprehensive view

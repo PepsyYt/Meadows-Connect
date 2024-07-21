@@ -1,0 +1,9 @@
+Security Information
+Retrieve Contacts:
+User Query: "I need the contact number for the security guard."
+AI Response: "Here are the contact numbers +91 9026983411 for the security guards on duty."
+Emergency Alert:
+
+User Query: "I have an emergency. Can you alert the security team?"
+AI Response: "I’m notifying the security team now, pleases call on this number for emergency service +91 7398219360 They will assist you shortly."
+Action: AI triggers an emergency alert to the security team.

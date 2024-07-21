@@ -311,39 +311,54 @@
 
                         <p class="fieldset">
                             <input class="full-width has-padding" type="submit" value="Create account">
-                        </p>
-                    </form>
-
-                    <a href="#0" class="cd-close-form">Close</a>
-                </div> <!-- cd-signup -->
-                
-                <!-- reset password form -->
-                <div id="cd-reset-password">
-                    <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-
-                    <form class="cd-form">
-                        <p class="fieldset">
-                            <label class="image-replace cd-email" for="reset-email">E-mail</label>
-                            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
-                            <span class="cd-error-message">Error message here!</span>
-                        </p>
-                        <p class="fieldset">
-                            <input class="full-width has-padding" type="submit" value="Reset password">
-                        </p>
-                    </form>
-
-                    <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
-                </div> <!-- cd-reset-password -->
-                <a href="#0" class="cd-close-form">Close</a>
-            </div> <!-- cd-user-modal-container -->
-        </div> <!-- cd-user-modal -->
-    </div><!-- /.header-overlay-content -->
-
-    <!-- ====== Page Header ====== --> 
-    <div class="page-header default-template-gradient">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">                
+                                                                <div class="share-meta dropup pull-right">
+                                                        <ul>
+                                                            <li class="dropup">
+                                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></a>
+                                                                <ul class="dropdown-menu">
+                                                                    <li>
+                                                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="fa fa-star-o"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>-three.png" alt="apartment" />
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('sortOptions').addEventListener('change', function() {
+            const sortOption = this.value;
+            const apartmentsContainer = document.getElementById('apartments');
+            const apartments = Array.from(apartmentsContainer.getElementsByClassName('apartment'));
+    
+            apartments.sort((a, b) => {
+                const priceA = parseInt(a.getAttribute('data-price'));
+                const priceB = parseInt(b.getAttribute('data-price'));
+    
+                if (sortOption === 'lowToHigh') {
+                    return priceA - priceB;
+                } else if (sortOption === 'highToLow') {
+                    return priceB - priceA;
+                }
+            });
+    
+            apartments.forEach(apartment => apartmentsContainer.appendChild(apartment));
+        });
+    </script>    
                     <h2 class="page-title">Choose Apartment</h2>
                     <p class="page-description">Take A Apartment For Booking</p>        
                 </div><!-- /.col-md-12 -->
@@ -397,8 +412,7 @@
                         <form class="hidden-md hidden-lg">
                             <select class="apartment-menu-mobile">
                                 <option value='0'>Popular</option>
-                                <option value='1'>Date Newest to oldest</option>
-                                <option value='2'>Date Older to newest</option>
+                                
                                 <option value='3'>Price Low to high </option>
                                 <option value='4'>Price high to low</option>
                                 <optgroup label="Category">
@@ -900,7 +914,264 @@
                                                                 <ul class="dropdown-menu">
                                                                     <li>
                                                                         <a href="#"><i class="fa fa-facebook"></i></a>
-                                                                    </li>
+                                                                    </li><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <select id="sortOptions">
+        <option value="lowToHigh">Price: Low to High</option>
+        <option value="highToLow">Price: High to Low</option>
+    </select>
+
+    <div id="apartments">
+        <div class="apartment" data-price="7900000">
+            <div class="image-content">
+                <a href="apartment-single.html">
+                    <img src="assets/images/apartment/apartment-three.png" alt="apartment" />
+                </a>
+            </div><!-- /.image-content -->
+            <div class="text-content">
+                <div class="top-content">
+                    <h3>
+                        <a href="apartment-single.html">Sector 'C' Apartment</a>
+                    </h3>
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                        Green Meadows, Anderi West 
+                    </span> 
+                </div><!-- /.top-content -->
+                <div class="bottom-content clearfix">
+                    <div class="meta-bed-room">
+                        <i class="fa fa-bed"></i> 1 Bedrooms
+                    </div>
+                    <div class="meta-bath-room">
+                        <i class="fa fa-bath"></i> 1 Bathroom
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="rent-price pull-left">
+                        &#8377; 79-80 Lac 
+                    </div>
+                    <div class="share-meta dropup pull-right">
+                        <ul>
+                            <li class="dropup">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">
+                                    <!-- Dropdown content -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.bottom-content -->
+            </div><!-- /.text-content -->
+        </div><!-- /.apartment -->
+        <!-- Repeat similar blocks for other apartments -->
+    </div><!-- /#apartments -->
+
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <select id="sortOptions">
+        <option value="lowToHigh">Price: Low to High</option>
+        <option value="highToLow">Price: High to Low</option>
+    </select>
+
+    <div id="apartments">
+        <div class="apartment" data-price="7900000">
+            <div class="image-content">
+                <a href="apartment-single.html">
+                    <img src="assets/images/apartment/apartment-three.png" alt="apartment" />
+                </a>
+            </div><!-- /.image-content -->
+            <div class="text-content">
+                <div class="top-content">
+                    <h3>
+                        <a href="apartment-single.html">Sector 'C' Apartment</a>
+                    </h3>
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                        Green Meadows, Anderi West 
+                    </span> 
+                </div><!-- /.top-content -->
+                <div class="bottom-content clearfix">
+                    <div class="meta-bed-room">
+                        <i class="fa fa-bed"></i> 1 Bedrooms
+                    </div>
+                    <div class="meta-bath-room">
+                        <i class="fa fa-bath"></i> 1 Bathroom
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="rent-price pull-left">
+                        &#8377; 79-80 Lac 
+                    </div>
+                    <div class="share-meta dropup pull-right">
+                        <ul>
+                            <li class="dropup">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.bottom-content -->
+            </div><!-- /.text-content -->
+        </div><!-- /.apartment -->
+        <!-- Repeat similar blocks for other apartments -->
+    </div><!-- /#apartments -->
+
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <select id="sortOptions">
+        <option value="lowToHigh">Price: Low to High</option>
+        <option value="highToLow">Price: High to Low</option>
+    </select>
+
+    <div id="apartments">
+        <div class="apartment" data-price="7900000">
+            <div class="image-content">
+                <a href="apartment-single.html">
+                    <img src="assets/images/apartment/apartment-three.png" alt="apartment" />
+                </a>
+            </div><!-- /.image-content -->
+            <div class="text-content">
+                <div class="top-content">
+                    <h3>
+                        <a href="apartment-single.html">Sector 'C' Apartment</a>
+                    </h3>
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                        Green Meadows, Anderi West 
+                    </span> 
+                </div><!-- /.top-content -->
+                <div class="bottom-content clearfix">
+                    <div class="meta-bed-room">
+                        <i class="fa fa-bed"></i> 1 Bedrooms
+                    </div>
+                    <div class="meta-bath-room">
+                        <i class="fa fa-bath"></i> 1 Bathroom
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="rent-price pull-left">
+                        &#8377; 79-80 Lac 
+                    </div>
+                    <div class="share-meta dropup pull-right">
+                        <ul>
+                            <li class="dropup">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.bottom-content -->
+            </div><!-- /.text-content -->
+        </div><!-- /.apartment -->
+        <!-- Repeat similar blocks for other apartments -->
+    </div><!-- /#apartments -->
+
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <select id="sortOptions">
+        <option value="lowToHigh">Price: Low to High</option>
+        <option value="highToLow">Price: High to Low</option>
+    </select>
+
+    <div id="apartments">
+        <div class="apartment" data-price="7900000">
+            <div class="image-content">
+                <a href="apartment-single.html">
+                    <img src="assets/images/apartment/apartment-three.png" alt="apartment" />
+                </a>
+            </div><!-- /.image-content -->
+            <div class="text-content">
+                <div class="top-content">
+                    <h3>
+                        <a href="apartment-single.html">Sector 'C' Apartment</a>
+                    </h3>
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                        Green Meadows, Anderi West 
+                    </span> 
+                </div><!-- /.top-content -->
+                <div class="bottom-content clearfix">
+                    <div class="meta-bed-room">
+                        <i class="fa fa-bed"></i> 1 Bedrooms
+                    </div>
+                    <div class="meta-bath-room">
+                        <i class="fa fa-bath"></i> 1 Bathroom
+                    </div>
+                    <span class="clearfix"></span>
+                    <div class="rent-price pull-left">
+                        &#8377; 79-80 Lac 
+                    </div>
+                    <div class="share-meta dropup pull-right">
+                        <ul>
+                            <li class="dropup">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.bottom-content -->
+            </div><!-- /.text-content -->
+        </div><!-- /.apartment -->
+        <!-- Repeat similar blocks for other apartments -->
+    </div><!-- /#apartments -->
+
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
                                                                     <li>
                                                                         <a href="#"><i class="fa fa-twitter"></i></a>
                                                                     </li>
@@ -908,7 +1179,72 @@
                                                                         <a href="#"><i class="fa fa-instagram"></i></a>
                                                                     </li>
                                                                     <li>
-                                                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking</title>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <select id="sortOptions">
+            <option value="lowToHigh">Price: Low to High</option>
+            <option value="highToLow">Price: High to Low</option>
+        </select>
+
+        <div id="apartments">
+            <div class="apartment" data-price="7900000">
+                <div class="image-content">
+                    <a href="apartment-single.html">
+                        <img src="assets/images/apartment/apartment-three.png" alt="apartment" />
+                    </a>
+                </div><!-- /.image-content -->
+                <div class="text-content">
+                    <div class="top-content">
+                        <h3>
+                            <a href="apartment-single.html">Sector 'C' Apartment</a>
+                        </h3>
+                        <span>
+                            <i class="fa fa-map-marker"></i>
+                            Green Meadows, Anderi West 
+                        </span> 
+                    </div><!-- /.top-content -->
+                    <div class="bottom-content clearfix">
+                        <div class="meta-bed-room">
+                            <i class="fa fa-bed"></i> 1 Bedrooms
+                        </div>
+                        <div class="meta-bath-room">
+                            <i class="fa fa-bath"></i> 1 Bathroom
+                        </div>
+                        <span class="clearfix"></span>
+                        <div class="rent-price pull-left">
+                            &#8377; 79-80 Lac 
+                        </div>
+                        <div class="share-meta dropup pull-right">
+                            <ul>
+                                <li class="dropup">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-share-alt"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- /.bottom-content -->
+                </div><!-- /.text-content -->
+            </div><!-- /.apartment -->
+            <!-- Repeat similar blocks for other apartments -->
+        </div><!-- /#apartments -->
+
+        <script src="path/to/jquery.min.js"></script>
+        <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>                                                                 <a href="#"><i class="fa fa-google-plus"></i></a>
                                                                     </li>
                                                                 </ul>
                                                             </li>

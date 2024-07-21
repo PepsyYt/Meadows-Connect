@@ -1,0 +1,91 @@
+
+/* =======commingsoon============ */
+.commingsoon {
+	overflow: hidden;
+}
+.commingsoon-content {
+	> .row {
+		padding: 150px 0;
+		@media only screen and (max-width: 480px) {
+			padding: 60px 15px;
+		}
+	}
+	.comming-heading {
+		font-size:60px;
+		color: #ffffff;
+		letter-spacing:1px;
+		text-transform:capitalize;
+		font-family: inherit;
+		font-weight: bold;
+		@media only screen and (max-width: 480px) {
+			font-size: 30px;
+		}
+	}
+	.comming-description {
+		font-size: 15px;
+		letter-spacing: 0.15em;
+		color:#fff;
+		font-family: inherit;
+		margin-bottom: 45px;
+	}
+	.social-link a:hover {
+		background-color: #ffffff;
+	}
+}
+
+.commingsoon-count {
+    margin: 15px 0 30px;
+    text-align: center;
+    .timer-body-block {
+        display: table;
+        width: 100%;
+        padding: 0 45px;
+        @media only screen and (max-width: 767px) {
+            padding: 0;
+        }
+    }
+    .timer-body-block > div {
+        display: table-cell;
+        .tab-val {
+            color: #fff;
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 1em;
+            @media only screen and (max-width: 767px) {
+                font-size: 45px;
+            }            
+            @media only screen and (max-width: 600px) {
+                font-size: 25px;
+            }
+        }
+        .tab-unit {
+        	font-size:18px;
+        	font-weight:500;
+            text-transform: capitalize;
+            @media only screen and (max-width: 767px) {
+                font-size: 15px;
+            }
+        }
+    }  
+}
+
+
+.social-link {
+	a {
+		background-color: #21B360;
+	    padding: 9px;
+	    width: 35px;
+	    height: 35px;
+	    text-align: center;
+	    line-height: 17px;
+	    font-size: 19px;
+	    color: #337A6B;
+	    border-radius: 50%;
+	    margin-right: 10px;
+	    margin-top: 35px;
+	    display: inline-block;
+	    .fa {
+	    	font-size: 15px;
+	    }
+	}
+}

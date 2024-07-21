@@ -1,0 +1,47 @@
+.fun-fects-area {
+   position: relative;
+   padding: 90px 0px;
+   background-position: 50% 50%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   &:before {
+     position: absolute;
+     content: "";
+     background-color: rgba(#000000, 0.45);
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+   }
+}
+.stat {
+   text-align: center;
+}
+.highlight {
+   font-weight: bold;
+   margin-bottom: 40px;
+   font-size: 60px;
+   color: #fff;
+   font-family: inherit;
+   margin-top: 0;
+   margin-bottom: 0;
+   @media only screen and (max-width: 767px) {
+       font-size: 45px;
+   }
+}
+.milestone-details {
+   font-weight: bold;
+   font-size: 36px;
+   color: #fff;
+   @media screen and (max-width: 990px) {
+     font-size: 30px;
+   }
+   @media only screen and (max-width: 767px) {
+     font-size: 20px;
+   }
+}
+.milestone-counter {
+   @media screen and (max-width: 990px) {
+      margin-bottom: 50px;
+   }
+}

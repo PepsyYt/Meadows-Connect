@@ -1,0 +1,32 @@
+.error-page-area {
+	overflow: hidden;
+}
+.error-page-area .default-pd-center {
+	text-align: inherit;
+	padding: 120px 0;
+	.error-text-content {
+		margin:auto;
+		display:table;
+		.error-title {
+			font-weight: bold;
+			margin-top: 0; 
+			display: block;
+			margin-bottom: 0;
+			margin-top: 0;
+			font-size: 60px;
+			line-height: normal;
+		}
+		.error-description {
+			font-size: 30px;
+			color: #fff;
+			line-height: normal;
+			margin-bottom: 30px;
+			font-weight: 600;
+		}
+		.button {
+			border-radius: 5px;
+		    top: 0;
+		    display: inline-block;
+		}
+	}
+}

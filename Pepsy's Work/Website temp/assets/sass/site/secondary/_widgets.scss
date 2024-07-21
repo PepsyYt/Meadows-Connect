@@ -1,0 +1,125 @@
+.widget {
+	background: $header__footer-bg;
+	margin-bottom: 30px;
+	overflow: hidden;
+	&:last-child {
+		border-bottom: none;
+	}
+	select {
+		width: 100%;
+		border: 1px solid $color__border-one;
+		padding: 0.4em 0.8em;
+		outline: none;
+	}
+	ul, ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul li {
+		border-bottom: 1px solid $color__border-one;
+	}
+	p {
+		font-family: $font__body;
+	}
+	.widget-title-area {
+		position: relative;
+	}
+	.widget-title {
+		margin-top: 0;
+	}
+	pre {
+		padding: 0.5em
+	}
+	label {
+		margin-bottom: 0;
+		display: inline;
+	}
+	option {
+		padding: 0.2em 1em;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	input[type="password"],
+	input[type="search"],
+	textarea {
+		padding: 0.5em 1em;
+		&:focus {
+		 	box-shadow: none !important;
+		}
+	}
+}
+
+.blog-content-right {
+	.widget {
+		background-color: #fff;
+	    margin-bottom: 30px;
+	    padding: 30px;
+	}
+	.widget .widget-title {
+		font-family: inherit;
+		font-size: 24px;
+		margin-bottom: 25px;
+		font-weight: bold;
+		background: linear-gradient(330deg, #1136bb 50%, #019047 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: bold;
+		border-bottom: 0 none;
+		padding-bottom: 0;
+	}
+}
+
+
+
+
+
+.tagcloud a:hover, .unit, .blog-area .nav-tabs li.active a {
+	background: #21b75f; /* Old browsers */
+	background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #21b75f 0%,#31386e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 ); 
+}
+
+.widget-title-area .widget-title {
+	font-size: 22px;
+	border-bottom: 1px solid #DEDEDE;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+.footer-area {
+	.widget {
+		background: transparent;
+	}
+}
+.nevy-color {
+	.button {
+		background: $color_nevy;
+	}
+	.widget-title-area .widget-title {
+		color: $color_nevy;
+	}
+	&.widget.widget_place_category ul li a {
+		color: $color_nevy;
+	}
+}
+
+.widget.apartments_ads {
+	padding: 0;
+}
+.widget-top {
+	margin-top: 6px;	
+}
+.widget .expand-margin.widget-title:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    color: #333333;
+}
+.widget .expand-margin.expand.widget-title:after {
+    content: "\f106";
+}

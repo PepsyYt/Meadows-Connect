@@ -1,0 +1,123 @@
+.aboutus-area {
+    padding: 75px 0 90px;
+    .tab-list {
+        position: relative;
+        &:before {
+            position: absolute;
+            content: "";
+            background-color: #EEEEEE;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            z-index: 999;
+            right: 0px;
+            @media screen and (max-width: 990px) {
+                display: none;
+            }
+            @media screen and (max-width: 1200px) {
+                background-color: transparent;
+            }
+        }
+    }
+    .nav.nav-tabs {
+        border-bottom: none;
+        li {
+            padding-bottom: 60px;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: "";
+                background-color: #B6B6B6;
+                width: 20px;
+                height: 20px;
+                right: -10px;
+                top: 10px;
+                border-radius: 50%;
+                z-index: 999;
+                border: 5px solid #EEEEEE;
+                @media screen and (max-width: 990px) {
+                    top: 30px;
+                }
+            }
+            &:last-child::before {
+                top: auto;
+                bottom: 0;
+            }
+            &:first-child::before {
+                top: 0;
+                right: -10px;
+                @media screen and (max-width: 990px) {
+                    top: 30px;
+                }
+            }
+            &:last-child {
+                padding: 0;
+            }
+        }
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            color: #6a6a6a;
+            &:last-child {
+                padding: 0 30px;
+            }
+            &:hover {
+                border: 1px solid #fff;
+                background: none;
+            }
+        }
+        li.active a {
+            border: 1px solid #fff;
+        }
+    }
+    .about-mobile {
+        width: 100%;
+        border: 2px solid #31386e;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    .nav-tabs.four {
+        li.active {
+            &:before {
+                background-color: #34B96D;
+            }
+        }
+    }
+    .text-content {
+        line-height: 25px;
+        font-size: 14px;
+        color: #4b4b4b;
+        font-weight: 500;
+        @media screen and (max-width: 990px) {
+            margin-bottom: 20px;
+        }
+    }
+    .text-content {
+        padding: 0 10px;
+        ul,
+        ol {
+            li {
+                position: relative;
+                list-style: none;
+                margin-top: 10px;
+                &:before {
+                    position: absolute;
+                    content: "";
+                    background-color: #B6B6B6;
+                    width: 8px;
+                    height: 8px;
+                    left: -25px;
+                    top: 7px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        > ul,
+        > ol {
+            > li:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

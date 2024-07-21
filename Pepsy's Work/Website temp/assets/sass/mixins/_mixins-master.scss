@@ -1,0 +1,87 @@
+// Center block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+//display div as a table
+@mixin table_display {
+    display: table-cell;
+    vertical-align: top;
+}
+
+// prefix declarations
+@mixin prefixed($property, $value) {
+    @if $webkit == true {
+        -webkit-#{$property}: #{$value};
+    }
+
+    @if $moz == true {
+        -moz-#{$property}: #{$value};
+    }
+
+    @if $ms == true {
+        -ms-#{$property}: #{$value};
+    }
+
+    @if $o == true {
+        -o-#{$property}: #{$value};
+    }
+
+    #{$property}: #{$value};
+}
+
+// prefix declarations with all browser true
+
+@mixin prefixedallon($property, $value) {
+    @if $webkit-on == true {
+        -webkit-#{$property}: #{$value};
+    }
+
+    @if $moz-on == true {
+        -moz-#{$property}: #{$value};
+    }
+
+    @if $ms-on == true {
+        -ms-#{$property}: #{$value};
+    }
+
+    @if $o-on == true {
+        -o-#{$property}: #{$value};
+    }
+    #{$property}: #{$value};
+}
+
+// prefix declarations double value
+@mixin prefixed_double($property, $value, $value-two) {
+    @if $webkit == true {
+        -webkit-#{$property}: #{$value},#{$value-two};
+    }
+
+    @if $moz == true {
+        -moz-#{$property}: #{$value},#{$value-two};
+    }
+
+    @if $ms == true {
+        -ms-#{$property}: #{$value},#{$value-two};
+    }
+
+    @if $o == true {
+        -o-#{$property}: #{$value},#{$value-two};
+    }
+
+    #{$property}: #{$value},#{$value-two};
+}
+

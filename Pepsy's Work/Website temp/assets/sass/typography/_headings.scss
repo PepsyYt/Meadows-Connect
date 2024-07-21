@@ -1,0 +1,214 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-family: $font__heading;
+	line-height: $font__line-height-heading;
+	color: $color__heading;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  	font-weight: inherit;
+}
+
+h1 {
+  	font-size: $heading__one;
+}
+
+h2 {
+	font-size: $heading__two;
+}
+
+h3 {
+	font-size: $heading__three;
+}
+
+h4 {
+	font-size: $heading__four;
+}
+
+h5 {
+	font-size: $heading__five;
+}
+
+h6 {
+	font-size: $heading__six;
+}
+
+small {
+	font-size: $heading__six;
+} 
+
+.font_small {
+	@extend small;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    color: inherit;
+    text-decoration: none
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
+    color: inherit;
+    text-decoration: none;
+    //border-bottom: 1px dotted $color__black;
+}
+
+.heading-content-one {
+    color: $color_nevy;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+    @media only screen and (min-width: 600px) {
+        max-width: 640px;
+    }
+    h2.title {
+        font-size: 60px;
+        color: inherit;
+        position: relative;
+        font-weight: bold;
+        margin-bottom: 0;
+        line-height: 1em;
+        margin-top: 10px;
+        @media only screen and (max-width: 767px) {
+            font-size: 45px;
+        }
+    }
+    h5.sub-title {
+        font-family: inherit;
+        font-size: 16px;
+        color: inherit;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.035em;
+        margin-top: 15px;
+    }
+    &.border {
+        h2.title {
+            position:relative;
+            margin-bottom: 30px;
+            &:before {
+                position: absolute;
+                content: "";
+                background-color: #969696;
+                width: 105px;
+                height: 1px;
+                bottom: -15px;
+                z-index: 999;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+}
+.heading-content-two {
+    color: $color_nevy;
+    margin: auto;
+    text-align: center;
+    font-weight:bold;
+    @media only screen and (min-width: 600px) {
+        max-width: 500px;
+    }
+    h2.title {
+        font-size: 60px;
+        color: inherit;
+        font-weight: bold;
+        line-height: 1.1em;
+    }
+    h5.sub-title {
+        font-family: inherit;
+        font-size: 16px;
+        color: inherit;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.015em;
+        margin-top: 15px;
+        span {
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}
+.heading-content-three {
+    margin: auto auto 45px;
+    text-align: center;
+    h2.title {
+        font-size: 45px;
+        color: inherit;
+        position: relative;
+        font-weight:bold;
+        color: $color_nevy;
+        margin-top: 10px;
+    }
+    h5.sub-title {
+        font-family: inherit;
+        font-size: 22px;
+        color: inherit;
+        font-weight:600;
+        color: #20527e;
+        span {
+            font-weight: bold;
+            text-transform: capitalize;
+            font-size: 24px;
+        }
+    }
+}
+.heading-content-four {
+    color: $color_nevy;
+    h2.title {
+        font-size: 60px;
+        color: inherit;
+        position: relative;
+    }
+    h5.sub-title {
+        font-family: inherit;
+        font-size: 16px;
+        color: inherit;
+    }
+}
+.section-title-area {
+    padding: 30px 0 60px;
+    .section-title {
+        font-weight: bold;
+        font-family: inherit;
+        font-size: 45px;
+        margin-bottom: 0;
+        line-height: 1em;
+    }
+    .section-description {
+        color: #999;
+        margin-bottom: 0;
+    }
+}
+
+.page-header {
+    .page-title {
+        color: #fff;
+        font-weight: bold;
+        font-family: inherit;
+        font-size: 45px;
+        margin-bottom: 0;
+        line-height: 1.12em;
+        margin-top: 0;
+    }
+    .page-description {
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 0.015em;
+        margin-bottom: 0;
+    }
+}
+
+.heading-section {
+    padding-top: 60px;
+}
+.form-bottom-title {
+    font-weight: 600;
+}

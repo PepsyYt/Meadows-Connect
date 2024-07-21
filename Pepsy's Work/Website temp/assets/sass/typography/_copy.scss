@@ -1,0 +1,89 @@
+::-moz-selection {
+  color: $color__white;
+  display: inline-block;
+  text-shadow: none;
+}
+::selection {
+  color: $color__white;
+  display: inline-block;
+  text-shadow: none;
+}
+p { 
+	margin-bottom: em(30px);
+	line-height: 1.975em;
+}
+blockquote {
+	margin: 0 0 1.3em;
+}
+address {
+	margin: 0 0 1.3em;
+}
+dfn {
+	font-size: 1em;
+}
+em {
+	@extend dfn;
+	font-style: italic;
+}
+cite {
+	@extend em;
+}
+i {
+	@extend em;
+}
+code {
+	@extend dfn;
+}
+kbd {
+	@extend dfn;
+}
+tt {
+	@extend dfn;
+}
+var {
+	@extend dfn;
+}
+
+abbr {
+	border-bottom: 1px dotted $color__border-abbr;
+	cursor: help;
+}
+acronym {
+	@extend abbr;
+}
+mark {
+	background: $color__background-ins;
+	text-decoration: none;
+}
+ins {
+	@extend mark;
+}
+label {
+	font-weight: 600;
+}
+big {
+	font-size: 125%;
+}
+
+pre {
+    background: $color__background-main;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    max-width: 100%;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    border-left: 10px solid #ccc;
+    font-size: 0.929em;
+    overflow: auto;
+}
+.dropcap {
+	display: block;
+	float: left;
+	margin: 15px 5px 0 0;
+	font-weight: bold;
+	font-size: 60px;
+	color: #ccc;
+}

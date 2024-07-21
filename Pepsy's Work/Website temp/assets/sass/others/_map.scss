@@ -1,0 +1,130 @@
+.map-area {
+	.heading-content-one {
+		margin-bottom: 20px;
+		h4 {
+			font-family: $font__body;
+			font-weight:600;
+			float:left;
+			span {
+				color:#605f5f;
+			}
+		}
+		h5 {
+			font-size: 24px;
+		    position: relative;
+		    top: 15px;
+		    color: #777A7D;
+		    font-family: inherit;
+		    font-weight: 600;
+		}
+		h2 {
+			
+			font-family: $font__body;
+			
+		}
+		p {
+			margin-bottom: 10px;
+			margin-top: 30px;
+			font-weight: 600;
+			font-size: 20px;
+			color: #535353;
+		}
+	}
+	iframe {
+		width:100%;
+	}
+}
+.map-content {
+	iframe {
+		width: 100%;
+	}
+}
+
+/* ======.google-map-area ======= */
+.map-left-content {
+	iframe{
+	    display: block;
+	    width: 100%;
+	    position: relative; /* IE needs a position other than static */
+	    pointer-events: none;
+	}
+	iframe.clicked{
+	    pointer-events: auto;
+	}
+}
+.google-map-area {
+	position: relative;
+	overflow: hidden;
+	@media only screen and (min-width: 992px) {
+		min-height: 855px;
+	}
+	iframe{
+	    display: block;
+	    width: 100%;
+	    position: relative; /* IE needs a position other than static */
+	    pointer-events: none;
+	}
+	iframe.clicked{
+	    pointer-events: auto;
+	}
+	iframe {
+		@media only screen and (max-width: 992px) {
+			height: 350px;
+		}
+	}
+	.col-md-4 {
+		@media only screen and (min-width: 992px) {
+			position:absolute;
+			right:0;
+			top: 50%;
+			-webkit-transform: translateY(-61%);
+			transform: translateY(-61%);
+		}
+		.widget-top {
+			width: 350px;
+		}
+	}
+	.col-md-4 > .widget_rental_search {
+		@media only screen and (min-width: 992px) {
+			max-width: 360px;
+		}		
+		@media only screen and (max-width: 992px) {
+			padding: 30px;
+			background: #F7F7F7;
+		}
+	}
+	.contact-background {
+		background-color: #fff;
+		padding: 0;
+		@media only screen and (min-width: 992px) {		
+			display: inline-block;
+			min-width: 240px;
+			position: absolute;
+			right: 7%;
+			top: 50%;
+			-webkit-transform: translateY(-75%);
+			transform: translateY(-75%);
+		}
+		@media only screen and (max-width: 992px) {
+			background-color: #f7f7f7;
+		}
+		.contact {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #ebebeb;
+			padding: 20px 30px;
+			h4 {
+				margin:0;
+			}
+			p {
+				margin: 0;
+				font-size: 12px;
+			}
+			&:last-child {
+				border-bottom: 0 none;
+				margin-bottom: 0;
+			}
+		}
+		
+	}
+
+}

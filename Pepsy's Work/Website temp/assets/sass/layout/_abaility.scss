@@ -1,0 +1,113 @@
+.availability-area {
+    padding: 60px 0 90px;
+    h3 {
+        text-align: center;
+        position: relative;
+    }
+    .button {
+        margin-top: 45px;
+        border: none;
+        padding: 15px 45px;
+    }
+    &.two {
+        background-color: #EDFFE8;
+        margin-top: 0;
+        table {
+            width: 100%;
+            margin-bottom: 50px;
+            th {
+                background-color: #3C3C3C;
+                border: 1px solid #3C3C3C;
+                text-align: center;
+                color: #fff;
+                padding: 15px;
+                letter-spacing: 0.25px;
+                font-size: 16px;
+                .fa-angle-down {
+                    position: relative;
+                    left: 10px;
+                    font-size: 18px;
+                }
+                @media only screen and (max-width: 800px) {
+                    display: none;
+                }
+            }
+            td {
+                background-color: #fff;
+                text-align: center;
+                padding: 15px;
+                letter-spacing: 0.25px;
+                font-weight: 600;
+                font-size: 16px;
+                color: #333;
+                &:last-child {
+                    @media only screen and (max-width: 800px) {
+                        border-bottom: 1px solid #3C3C3C;
+                    }
+                }
+                @media only screen and (max-width: 800px) {
+                    display: block !important;
+                    text-align: left;
+                    border-bottom: 0 none;
+                }
+                &:before {
+                    @media only screen and (max-width: 800px) {
+                        content: attr(data-title) ": ";
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .list {
+            background: #fff;
+            position: relative;
+            top: -68px;
+            padding: 10px 100px;
+            font-family: inherit;
+            font-weight: 500;
+            color: #000;
+            span {
+                color: #7B7B7B;
+            }
+        }
+        .form-group:nth-child(5) {
+            margin-right: 0px;
+        }
+        .form-group:nth-child(4) {
+            input {
+                margin-top: 30px;
+            }
+        }
+        .form-content .form-group:first-child input {
+            width: 260px;
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        .form-content {
+            select {
+                width: 250px;
+                @media only screen and (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+            h4 {
+                font-family: $font__body;
+            }
+            label {
+                font-family: $font__body;
+            }
+        }
+        .button {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        .availability-heading {
+            h4 {
+                span {
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}

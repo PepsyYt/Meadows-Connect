@@ -1,0 +1,122 @@
+.sticky {
+	display: block;
+}
+.hentry {
+	margin: 0 0 75px;
+}
+.page-content {
+	margin: 1.4em 0;
+}
+.entry-content {
+	@extend .page-content;
+}
+.entry-summary {
+	@extend .page-content;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 2.1em;
+}
+/*--------------------------------------------------------------
+# Page Heading
+--------------------------------------------------------------*/
+.header-title {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.page-header {
+	margin: 0;
+	padding: 60px 0;
+	text-align: center;
+}
+/*--------------------------------------------------------------
+# Post
+--------------------------------------------------------------*/
+.post {
+	background-color:#fff;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	.post-content {
+		padding: 20px;
+	}
+	.entry-meta {
+		color: #9a9a9a;
+		font-size: 13px;
+		letter-spacing: 0.02em;
+		font-weight: 600;
+		font-style: normal;
+		text-transform: capitalize;
+	    .devied {
+	    	background-color: #9a9a9a;
+    	    width: 2px;
+    	    height: 10px;
+    	    display: inline-block;
+    	    margin-right: 10px;
+    	    margin-left: 10px;
+	    }
+	}
+	.entry-header {
+		h3 {
+			line-height: 30px;
+			border-bottom: 1px solid #E1E1E1;
+			padding-bottom: 15px;
+			font-size: 20px;
+			margin-top: 15px;
+			font-weight: 800;
+			font-family	:inherit;
+		}
+	}
+	.entry-footer-meta {
+		i {
+			margin-right: 5px;
+		}
+		span {
+			margin-right:10px;
+		}
+		.like {
+			i {
+				color:#5ED8E1;
+			}
+		}
+		.comments {
+			i {
+				color:#7CC144;
+			}
+		}
+	}
+}
+.entry-meta {
+	color: $color__meta;
+	font-size: 11px;
+	letter-spacing: 0.04em;
+	font-weight: bold;
+	font-style: italic;
+	a {
+		color: inherit;
+	}
+	.entry-date {
+		display: inline-block;
+	}
+}
+.post {
+	.post-thumb {
+		overflow: hidden;
+		clear: both;
+		border-radius: 5px;
+		img {
+			display: block;
+			margin: auto;
+		}
+	}
+	.entry-footer {
+		font-size: 13px;
+		font-weight: 500;
+	}
+}
+.blog-menu-mobile {
+	width: 100%;
+	border: 2px solid #31386e;
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}

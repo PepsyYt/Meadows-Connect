@@ -1,0 +1,132 @@
+/*
+Template Name: HouseRent
+Template URI: http://house-rent.htmlguru.net
+Author: HTMLguru
+Author URI: http://softhopper.net
+Description: It\' s a HTML5 House Rent Template. Which is a unique feature and user competitive feature.
+Version: 1.0
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Typography 
+    ## copy 
+    ## headings 
+    ## typography 
+# Elements
+	## elements
+	## lists
+	## tables
+# Forms
+	## Buttons
+	## Form
+# Navigation
+	## Links
+	## Menus
+	## Pagination
+		## Breadcrumbs
+	## Navigation responsive
+		### Mobile CSS
+		### Pagination responsive
+# Accessibility
+# Alignments
+# Clearings
+# Layout
+    ## Header Part
+    	## Sign In/Sign Up Pop up 
+    ## Slider Part
+    ## Category Menu Part
+    ## Abaility Part
+    ## About us Part
+    ## Apartments Part
+    ## Fun-facts Part
+    ## Testimonial Part
+    	## Company With Logo
+    ## Call To Action Part
+    ## Service Part
+    ## Blog Part
+    ## Footer Part
+# Others
+	## Blog Single
+	## Coming Soon
+	## Map Content
+# Site Content
+	## Posts and pages
+		## Page Heading
+		## Post
+	## Asides
+	## Comments
+	## Widgets
+	## Widgets Content
+	## About Page
+	## Contact Page
+	## 404 Page
+	## Site Responsive
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+	## Media
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/layout";
+
+/*--------------------------------------------------------------
+# Others
+--------------------------------------------------------------*/
+@import "others/others";
+
+/*--------------------------------------------------------------
+# Site Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+@import "media/media";

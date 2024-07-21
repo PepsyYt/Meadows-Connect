@@ -1,0 +1,155 @@
+.single-content {
+	.single-text-content {
+		position: relative;
+		top: -25px;
+		
+		p {
+			font-size: 16px;
+			color: #636363;
+			font-weight: 600;
+			line-height: 30px;
+			margin-top: 30px;
+			margin-bottom: 50px;
+		}
+	}
+}
+.single-content {
+	background-color: #F7F7F7;
+	h4 {
+		font-family: $font__body;
+		position: relative;
+		top: 15px;
+		a {
+			margin-right: 10px;
+		}
+		span {
+			font-weight: normal;
+			color: #605F5F;
+		}
+	}
+	
+}
+
+.blog-area .blog-heading {
+	text-align: center;
+	h2 {
+		font-size:26px;
+		font-family: $font__body;
+		font-weight:bold;
+	}
+}
+.blog-area.bolge {
+	padding: 30px 0;
+}
+.blog-area {
+	.col-md-4.col-sm-6.col-xs-6 {
+		@media only screen and (max-width: 530px) {
+			width: 100%;
+		}
+	}
+	.col-md-4.col-sm-6.col-xs-6:last-child {
+		@media only screen and (min-width: 530px) and (max-width: 992px) {
+			display: none;
+		}
+	}
+}
+.color-black {
+	li {
+		a {
+			color:#000 !important;
+		}
+	}
+}
+
+.single-main-content {
+	padding: 60px;
+	background-color: #fff;
+	margin-top: 20px;
+	border-radius: 5px;
+	@media only screen and (max-width: 540px) {
+		padding: 30px;
+	}	
+	@media only screen and (max-width: 380px) {
+		padding: 20px;
+	}
+	.entry-header {
+		.entry-title {
+			font-size: 36px;
+		    font-weight: bold;
+		    font-family: inherit;
+		    color: #181818;
+		    margin-bottom: 30px;
+		}
+	}
+	.post-thumb {
+		overflow: hidden;
+		border-radius: 7px;
+	}
+	.post {
+		margin-bottom: 0;
+	}
+	.post .entry-meta {
+	    color: #828282;
+	    font-size: 13px;
+	    font-weight: 600;
+	    font-style: normal;
+	    display: block;
+	    overflow: hidden;
+	    > div .fa {
+	    	margin-right: 5px;
+	    }
+	}
+	.entry-meta > div {
+	    float: left;
+	    margin-right: 45px;
+	    margin-bottom: 30px;
+	    span {
+	    	display: block;
+	    	font-weight: bold;
+	    	color: #181818;
+	    }
+	}
+}
+
+.entry-share {
+	span {
+		font-weight:600;
+	}
+	a {
+		padding: 5px;
+		i {
+			color:#969696;
+			font-size:15px;
+			&:hover {
+				color:#000;
+			}
+		}
+	}
+}
+.ralated-area {
+	.ralated-heading {
+		margin-top: 30px;
+		h2 {
+			font-weight: bold;
+			font-size: 25px;
+			color: #363636;
+			font-family: inherit;
+			margin-top: 0;
+		}
+	}
+	.post-thumb {
+		img {
+			width:100%;
+		}
+	}
+	.col-md-4.col-sm-6.col-xs-6:last-child {
+		@media only screen and (max-width: 992px) and (min-width: 540px) {
+			display: none;
+		}
+	}	
+	.col-md-4.col-sm-6.col-xs-6 {
+		@media only screen and (max-width: 539px) {
+			width: 100%;
+		}
+	}
+}

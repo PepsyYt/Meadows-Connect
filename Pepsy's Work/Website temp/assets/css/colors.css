@@ -1,0 +1,255 @@
+/**** Primary Color ****/
+label a {
+	color: #FCA22A;
+}
+.left-content li a:hover {
+	color: #FCA22A !important;
+}
+.left-content li a:hover i {
+	color: #FCA22A !important;
+}
+.header-bottom-area.default-template-gradient .menu-list > li > a:hover {
+	color: #FCA22A !important;
+}
+.banner-with-menu-area .menu-list > li > a:hover {
+	color: #FCA22A !important;
+}
+.category-menu.default-template-gradient .category-list a:hover i,
+.category-menu.default-template-gradient .category-list a:hover h4 {
+	color: #FCA22A;
+}
+.social-media ul li a:hover {
+	color: #FCA22A;
+}
+.slider-text-content h2:before {
+	background-color: #FCA22A;
+}
+.slider-text-content a {
+	background-color: #FCA22A;
+}
+.banner-text-content .more-link {
+	background-color: #FCA22A;	
+}
+.aboutus-area .nav.nav-tabs li.active:before {
+	background-color: #FCA22A;
+}
+.booking {
+	color: #FCA22A;
+}
+.blog-area .button, 
+.call-to-action .button {
+	background-color: #FCA22A;
+}
+.call-to-action .contact-left-content h4 {
+	color: #FCA22A;
+}
+.testimonial-slider .item .star i {
+	color: #FCA22A;
+}
+.testimonial-slider .owl-dot.active {
+	background-color: #FCA22A;
+}
+.yellow-color .button {
+	background-color: #FCA22A;
+}
+.yellow-color .widget-title-area .widget-title {
+	color: #FCA22A;
+}
+.yellow-color.widget.widget_place_category ul li a {
+	color: #FCA22A;
+}
+.widget_rental_search .advance_search_query.booking-form .form-group label {
+	color: #FCA22A;
+}
+.commingsoon-count .timer-body-block > div .tab-unit {
+	color: #FCA22A;
+}
+.error-page-area .default-pd-center .error-text-content .error-title {
+	color: #FCA22A;
+}
+.stat i {
+   color: #FCA22A;
+}
+.call-to-action.style-two .right-content .contact a {
+	background-color: #FCA22A !important;
+}
+.footer-area .bottom-content a {
+	color: #FCA22A;
+}
+
+/**** Secondary Color ****/
+::-moz-selection {
+	background-color: #21b360;
+}
+::selection {
+	background-color: #21b360;
+}
+a:hover,
+a:focus {
+	color: #21b360;
+}
+.header-top-content .left-content ul li a {
+    color: #21b360;
+}
+.menu-list li:hover > a, 
+.menu-list > li > a:hover, 
+.menu-list > li > a.active {
+	color: #21b360 !important;
+}
+.button:hover {
+	background-color: #21b360;
+}
+.banner-text-content .more-link:hover {
+	background-color: #21b360;
+}
+.call-to-action.style-two .right-content .contact a:hover {
+	background-color: #21b360;
+}
+.apartments-content .text-content .top-content h3 a:hover {
+	color: #21b360;
+}
+.dropdown-menu li a:hover,
+.share-meta li a:hover {
+	color: #21b360;
+}
+.category-list a:hover i,
+.category-list a:hover h4 {
+	color: #21b360;
+}
+.catagory-left-content .button:hover {
+	background-color: #21b360;
+}
+.call-to-action.style-two .right-content .contact a:hover {
+	background-color:  #21b360 !important;
+}
+
+/**** Gradient Color ****/
+.default-template-gradient {
+	background: #21b75f;
+	background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%);
+	background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%);
+	background: linear-gradient(to right,  #21b75f 0%,#31386e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 );
+}
+input.default-template-gradient {
+	background: #21b75f !important;
+	background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%) !important;
+	background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%) !important;
+	background: linear-gradient(to right,  #21b75f 0%,#31386e 100%)!important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 ) !important;
+}
+.default-gradient-before:before {
+	background: #21b75f;
+	background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%);
+	background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%);
+	background: linear-gradient(to right,  #21b75f 0%,#31386e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 );
+}
+.default-text-gradient {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   	.default-text-gradient {
+   		color: #019047;
+   	}
+}
+.gradient-transparent {
+  background: rgba(49, 56, 110, 0.85);
+  background: -moz-linear-gradient(left, rgba(33, 183, 95, 0.85) 0%, rgba(49, 56, 110, 0.85) 100%);
+  background: -webkit-linear-gradient(left, rgba(33, 183, 95, 0.85) 0%, rgba(49, 56, 110, 0.85) 100%);
+  background: linear-gradient(to right, rgba(33, 183, 95, 0.85) 0%, rgba(49, 56, 110, 0.85) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba( #21b75f, 0.85)', endColorstr='rgba( #31386e, 0.85)',GradientType=1 );
+}
+.overlay-gradient:before {
+  background: rgba(49, 56, 110, 0.45);
+  background: -moz-linear-gradient(left, rgba(33, 183, 95, 0.45) 0%, rgba(49, 56, 110, 0.45) 100%);
+  background: -webkit-linear-gradient(left, rgba(33, 183, 95, 0.45) 0%, rgba(49, 56, 110, 0.45) 100%);
+  background: linear-gradient(to right, rgba(33, 183, 95, 0.45) 0%, rgba(49, 56, 110, 0.45) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba( #21b75f, 0.45)', endColorstr='rgba( #31386e, 0.45)',GradientType=1 );
+}
+.gradient-border:after {
+  background: #21b75f;
+  background: -moz-linear-gradient(bottom, #21b75f 0%, #31386e 100%);
+  background: -webkit-linear-gradient(bottom, #21b75f 0%, #31386e 100%);
+  background: linear-gradient(to bottom, #21b75f 0%, #31386e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 );
+  border-radius: 10px;
+}
+.gradient-circle > div {
+  background: #21b75f;
+  background: -moz-linear-gradient(bottom, #21b75f 0%, #31386e 100%);
+  background: -webkit-linear-gradient(bottom, #21b75f 0%, #31386e 100%);
+  background: linear-gradient(to bottom, #21b75f 0%, #31386e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 );
+}
+.apartment-menu li.active>a,
+.apartment-menu>li.active>a, 
+.apartment-menu>li.active>a:focus, 
+.apartment-menu>li.active>a:hover,
+.apartment-menu li a:hover {
+	background: #21b75f !important;
+	background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%) !important;
+	background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%) !important;
+	background: linear-gradient(to right,  #21b75f 0%,#31386e 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 ) !important;
+}
+.no-touch .cd-form input[type=submit]:hover, 
+.no-touch .cd-form input[type=submit]:focus,
+.cd-form input[type=submit] {
+  background: #21b75f;
+  background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%);
+  background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%);
+  background: linear-gradient(to right,  #21b75f 0%,#31386e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 );
+  outline: none;
+}
+.contactus-area .submit {
+	background: #21b75f;
+	background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%);
+	background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%); 
+	background: linear-gradient(to right,  #21b75f 0%,#31386e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 ); /* IE6-9 */
+}
+.gallery-area .gallery-slider > div.owl-nav > div.owl-prev i {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}
+
+.gallery-area .gallery-slider > div.owl-nav > div.owl-next i {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}
+
+.apartments-area.post h1 {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}
+.corousel-gallery-area .family-apartment-content .apartment-description:before {
+    background: -moz-linear-gradient(left, #21b75f 0%, #31386e 100%);
+    background: -webkit-linear-gradient(left, #21b75f 0%, #31386e 100%);
+    background: linear-gradient(to right, #21b75f 0%, #31386e 100%);
+}
+.category-menu.five .category-list:hover h4 {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}
+.aboutus-area.four .title {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}
+
+.about-heading-content h2,  
+.about-content-left h2, 
+.social-media.footer i, 
+.availability-area.two h2 {
+	background: -moz-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: -webkit-linear-gradient(330deg, #1136bb 0%, #019047 100%);
+	background: linear-gradient(330deg, #1136bb 0%, #019047 100%);
+}

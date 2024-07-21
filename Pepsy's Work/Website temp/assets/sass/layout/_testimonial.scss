@@ -1,0 +1,164 @@
+.testimonial-area {
+	padding: 60px 0 75px;
+	.container {
+		overflow: hidden;
+	}
+	.owl-carousel .owl-stage-outer {
+		overflow: visible;
+	}
+	.testimonial-heading-content {
+		text-align: center;
+		margin-bottom: 90px;
+		position: relative;
+		h2.title {
+			font-size: 120px;
+		    color: #fff;
+		    font-weight: bold;
+		    margin-top: 0;
+		    line-height: 1.1em;
+		    margin-bottom: 0;
+			@media screen and (max-width: 992px) {
+				font-size: 90px;	
+			}			
+			@media screen and (max-width: 780px) {
+				font-size: 75px;	
+			}			
+			@media screen and (max-width: 540px) {
+				font-size: 60px;	
+			}
+		}
+		h2.sub-title {
+			font-size: 30px;
+			margin: 0;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-top: 0;
+			font-family: inherit;
+		}
+		i {
+			font-size: 30px;
+			position: absolute;
+			bottom: 70px;
+			color: #525252;
+			left: 0;
+			right: 0;
+		}
+	}
+}
+.testimonial-slider {
+	.item {
+		position: relative;
+		box-shadow: 0px 0px 30px rgba(0,0,0,0.10);
+		.client-image {
+			width: 71px;
+			height: 71px;
+			backface-visibility: hidden;
+			position: absolute;
+			top: -40px;
+			left: 25px;
+		}
+		.client-content {
+			background-color: #fff;
+			padding: 30px;
+		}
+		h3 {
+			font-family: inherit;
+			line-height:30px;
+			font-weight: bold;
+			margin-bottom: 0;
+			text-transform: capitalize;
+		}
+		h5 {
+			font-family: inherit;
+			font-size: 15px;
+			margin-bottom: 15px;
+			font-weight: normal;
+			margin-top: 5px;
+			text-transform: capitalize;
+		}
+		p {
+			font-size: 15px;
+			margin-bottom: 15px;
+		}
+		.star {
+			i {
+				font-size: 17px;
+			}
+		}
+	}
+	.owl-dot {
+		width: 25px;
+	    height: 25px;
+	    background-color: #B6B6B6;
+	    border-radius: 50%;
+	    border: 7px solid #EEEEEE;
+	    display: inline-block;
+	    margin: 0 60px;
+	    @media only screen and (max-width: 992px) {
+	    	margin: 0 45px;
+	    }	    
+	    @media only screen and (max-width: 780px) {
+	    	margin: 0 30px;
+	    }	    
+	    @media only screen and (max-width: 767px) {
+	    	margin: 0 15px;
+	    }	    
+	    @media only screen and (max-width: 520px) {
+	    	margin: 0 5px;
+	    }
+	}
+	.owl-dots {
+		display: inline-block;
+		margin: auto;
+		display: table;
+		position:relative;
+		margin-top: 30px;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "";
+			background-color: #D8D8D8;
+			width: 70%;
+			height: 1px;
+			left: 0;
+			bottom: 18px;
+			z-index: -99;
+			right: 0;
+			margin: auto;
+			@media screen and (max-width: 990px) {
+				display:none;	
+			}
+		}
+	}
+}
+.testimonial-area > div > div:nth-child(2) {
+	margin-right: -22px;
+	margin-left: -20px	
+}
+/*--------------------------------------------------------------
+# Company With Logo
+--------------------------------------------------------------*/
+.company-logo-area {
+	padding: 75px 0;
+	.logo-content {
+		img {
+			width:auto;
+			width: auto;
+		}
+		h2 {
+			font-size: 30px;
+			color: #fff;
+			margin-bottom: 30px;
+			font-family: inherit;
+			font-weight: 600;
+			margin-top: 0;
+		}
+	}
+	.logo {
+		text-align: center;
+		img {
+			padding:50px;
+			width:auto;
+		}
+	}
+}

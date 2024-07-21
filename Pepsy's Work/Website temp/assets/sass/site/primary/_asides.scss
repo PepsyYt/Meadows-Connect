@@ -1,0 +1,28 @@
+.format-aside .entry-content {
+	margin-bottom: 0;
+}
+
+.format-aside {
+	border: 1px solid $color__border-four;
+	.entry-header .entry-title,
+	.entry-header .entry-meta,
+	.entry-footer {
+		display: none;
+	}
+	.post-format {
+		border: 1px solid $color__border-four;
+		line-height: 54px;
+		margin-top: -27px;
+	}
+	.entry-content {
+		padding: 15px 30px 30px;
+	}
+	.entry-content p {
+		margin-bottom: 20px;
+		border-bottom: 1px solid $color__border-four;
+		padding-bottom: 30px;
+	}
+	.entry-content .entry-meta {
+		text-align: center;
+	}
+}

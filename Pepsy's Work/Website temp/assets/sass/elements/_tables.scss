@@ -1,0 +1,52 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	border: 1px solid $color__border-three;
+}
+th {
+	border: 1px solid $color__border-three;
+}
+td {
+	@extend th;
+	border-width: 0 1px 1px 0;
+}
+/*--------------------------------------------------------------
+# Post, Page, Comments Table
+--------------------------------------------------------------*/
+.post, 
+.page, 
+#comments {
+	li {
+	    line-height: 1.3em;
+	}
+	table {
+	    border-collapse: collapse;
+	    margin: 20px 0;
+		width: 100%;
+		border: 1px solid $color__border-three;
+		border-left: none;
+		tbody tr.odd {
+			background: $color__white;
+		}
+		th, 
+		td {
+		    border-left: 1px solid $color__border-three;
+		    border-top: 1px solid $color__border-three;
+		    line-height: 18px;
+		    padding: 8px;
+		    text-align: left;
+		    vertical-align: top;
+		}
+	}
+}
+.tb {
+	display: table;
+	width: 100%;
+	.tb-cell {
+		display: table-cell;
+		vertical-align: middle;
+		&[class*=' col-'] {
+			float: none;
+		}
+	}
+}

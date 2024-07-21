@@ -1,0 +1,26 @@
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	&:hover,
+	&:active,
+	&:focus {
+		border-radius: 3px;
+		clip: auto !important;
+		color: $color__text-screen;
+		display: block;
+		font-size: 0.8em;
+		font-weight: bold;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP tool-bar. */
+	}
+}

@@ -1,0 +1,152 @@
+.about-main-content {
+	margin-bottom: 90px;
+	overflow: hidden;
+	.about-heading-content {
+		margin-bottom: 50px;
+		h4 {
+			font-family: $font__body;
+			font-weight:600;
+			position:relative;
+			top:10px;
+			span {
+				color:#605f5f;
+			}
+		}
+		h2 {
+			text-align:center;
+			font-size:45px;
+			font-family: $font__body;
+			margin-top: 50px;
+
+		}
+		p {
+			text-align:center;
+			font-weight:500;
+			line-height: 1.95em;
+		}
+	}
+}
+.about-content-left {
+	h2 {
+		font-size: 65px;
+		font-family: inherit;
+		margin-top: 0;
+		line-height: 1.1em;
+		font-weight: bold;
+	}
+}
+.about-bottom-content {
+	padding-bottom: 90px;	
+	overflow: hidden;
+	img {
+		width: auto;
+	}
+	.image-content{
+		margin: auto;
+		display: table;
+		width: 250px;
+		border-radius: 50%;
+		height: 250px;
+		text-align: center;
+		img {
+			background: #fff;
+			padding: 25px;
+			border-radius: 50%;
+		}
+	}	
+	
+	.author-sign {
+		img {
+			margin-top:40px;
+		}
+	}
+	.author-name {
+		text-align: center;
+		position: relative;
+		top: 25px;
+		font-size: 36px;
+		font-family: inherit;
+		font-weight: bold;
+		
+	}
+	.image {
+		float: right;
+		position: relative;
+		top: -25px;
+	}
+	p {
+		color:#767676;
+		line-height: 1.95em;
+	}
+	.social-media {
+		margin-top:40px;
+		span {
+			font-weight: 600;
+			margin-right: 15px;
+		}
+		a {
+			padding: 0 10px;
+		}
+	}
+	.author-designation {
+		position:relative;
+		top:15px;
+	}
+} 
+
+.author-content {
+	position: relative;
+	text-align: center;
+	&:before,
+	&:after {
+		content: "";
+	    border-bottom: 1px solid #ebebeb;
+	    min-width: 215px;
+	    top: 50%;
+	    position: absolute;
+	    z-index: -1;
+	}
+	&:before {
+		left: 0;
+	}
+	&:after {
+		right: 0;
+	}
+	.author-content-area {
+		background-color: #ffffff;
+		z-index: 1;
+		position: relative;
+		display: table;
+		margin: auto;
+		@media only screen and (max-width: 992px) {
+			padding: 0 10px;
+		}
+		&:before,
+		&:after {
+			content: "";
+			width: 10px;
+			height: 10px;
+			background: #21b75f;
+			background: -moz-linear-gradient(left,  #21b75f 0%, #31386e 100%);
+			background: -webkit-linear-gradient(left,  #21b75f 0%,#31386e 100%);
+			background: linear-gradient(to right,  #21b75f 0%,#31386e 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21b75f', endColorstr='#31386e',GradientType=1 );
+			position: absolute;
+			top: 50%;
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+			margin-top: -5px;
+			@media only screen and (max-width: 992px) {
+				background: transparent;
+			}
+		}
+		&:before {
+			left: -60px;
+		}		
+		&:after {
+			right: -60px;
+		}
+	}
+}
+
+

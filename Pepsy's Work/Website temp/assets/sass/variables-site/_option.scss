@@ -1,0 +1,28 @@
+$nameSpace: 'item' !default;
+$widget_name_one: 'latest';
+$widget_name_one: 'popular';
+$includeClasses: true !default;
+
+
+// for on off Browser prefix
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+$webkit-on: true !default;
+$moz-on: true !default;
+$ms-on: true !default;
+$o-on: true !default;
+
+//For Converting PX to SASS
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+  	@if (unitless($pixels)) {
+    	$pixels: $pixels * 1px;
+  	}
+  	@if (unitless($context)) {
+    	$context: $context * 1px;
+  	}
+  	@return $pixels / $context * 1em;
+}

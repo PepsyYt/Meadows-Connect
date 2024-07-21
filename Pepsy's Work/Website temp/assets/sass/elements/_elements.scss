@@ -1,0 +1,304 @@
+body {
+	background: $color__white; /* Fallback for when there is no custom background color defined. */
+	word-wrap: break-word;
+	overflow-x: hidden;
+}
+
+q {
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}
+
+blockquote {
+	border: 0;
+	padding: 0;
+	font-family: $font__heading;
+	font-style: italic;
+	font-size: 16px;
+	position: relative;
+	border-left: 5px solid #9bc6b2;
+	color: #939292;
+	&:before {
+		content: "";
+		display: block;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		border-radius: 50%;
+		background: #9bc6b2;
+		color: $color__white !important;
+		text-align: center;
+		left: -22px;
+		position: absolute;
+		top: 0; 
+		content: "\f10d";
+		font-style: normal;
+		font-family: FontAwesome;
+		font-size: 15px;
+	}
+	&:after {
+		background: #9bc6b2;
+		bottom: 0;
+		content: "";
+		height: 5px;
+		left: 0;
+		position: absolute;
+		width: 45px;
+	}
+	p {
+		padding: 0 0 20px 40px;
+		margin-bottom: 10px;
+		position: relative;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		cite {
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+	footer {
+		font-family: $font__body;
+		margin-left: 35px;
+		position: relative;
+		top: 6px;
+		margin-top: -15px;
+	}
+	cite, a, span {
+	    padding: 0 1.2em;
+		font-size: 0.8em;
+		font-weight: 500;
+		font-style: normal;
+		position: relative;
+	}
+	cite {
+		display: block;
+	}
+	cite::before {
+	    content: "--";
+	    padding-right: 5px;
+	}
+}
+blockquote .small::before,
+blockquote footer::before,
+blockquote small::before {
+	margin-left: 18px;
+} 
+.single-post {
+	blockquote {
+		margin: 35px 0 35px 25px;
+	}
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+@import "tables";
+
+.margin-less-top {
+	margin-top: -42px;
+}
+.default-pd-center {
+	padding: 90px 0px;
+	text-align: center;
+}
+.full-width-content {
+	float: none;
+	margin: auto;
+}
+.pd-zero {
+	padding: 0 !important;
+}
+.mobile-center {
+	@media only screen and (max-width: 767px) {
+		text-align: center;
+	}
+}
+.border-radius {
+	border-radius: 5px;
+}
+.jarallax {
+	position: relative;
+}
+.bg-gray-color {
+	background-color: #F7F7F7;
+}
+.bg-white-color {
+	background-color:#fff;
+}
+.yellow-color {
+	color: $color_yellow;
+}
+.nevy-blue-bg {
+	background: $color_nevy;
+}
+.bg-white-smoke {
+	background-color: #f8f8f8;
+}
+.bg-nero {
+	background-color: #1C1C1C;
+}
+.bg-green {
+	background: #21b75f;
+}
+.text-green {
+	color: #21b75f;
+}
+.default-text-gradient {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   	.default-text-gradient {
+   		background: transparent;
+   	}
+}
+.overlay-gradient:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.gradient-border {
+	border: 10px solid transparent;
+	position: relative;
+	background-clip: padding-box;
+	&:after {
+		position: absolute;
+		top: -12px; 
+		bottom: -12px;
+		left: -12px; 
+		right: -12px;
+		content: "";
+		z-index: 0;
+		border-radius: 5px;
+	}
+	> div {
+		position: relative;
+		z-index: 99;
+		margin: 0;
+	}
+} 
+.gradient-circle {
+	position: relative;
+	background-clip: padding-box;
+	> div {
+		position: absolute;
+		margin: 2px;
+		content: "";
+		z-index: 0;
+		border-radius: 50%;
+		padding: 2px;
+		span {
+			background: #fff;
+			border-radius: 50%;
+			padding: 30px;
+			display: block;
+		}
+	}
+}
+.transfarent-white-bg {
+	background-color: rgba(#ffffff, 0.92);
+}
+.breadcrumbs-area.bg {
+	background-color:#F8F8F8;
+}
+.overlay-bg {
+	position: relative;
+	&:before {
+		content: "";
+		position: absolute;
+		background-color: rgba(0,0,0,0.45);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
+.color-black {
+	h2 {
+		color:#000;
+	}
+	p {
+		color:#fff !important;
+	}
+}
+// Mobile Extend Button
+.mobile-extend {
+    @media only screen and (max-width: 992px) {
+        max-height: 600px;
+        overflow: hidden;
+    }
+}
+.extend-icon {
+    font-size: 35px;
+    padding: 15px;
+    display: block;
+    cursor: pointer; 
+    &.up .fa:before {
+        content: "\f106";
+    }
+}
+.extend-btn {
+    text-align: center;
+    position: relative;
+    margin-top: -95px;
+    padding-top: 60px;
+    background: -moz-linear-gradient(top,  rgba($color__white,0.6) 0%, rgba($color__white,0.7) 20%, rgba($color__white,0.7) 20%, rgba($color__white,0.9) 40%, rgba($color__white,1) 97%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba($color__white,0.7)), color-stop(20%,rgba($color__white,0.7)), color-stop(40%,rgba($color__white,0.7)), color-stop(40%,rgba($color__white,0.9)), color-stop(100%,rgba($color__white,1))); 
+    background: -webkit-linear-gradient(top,  rgba($color__white, 0.012) 0, rgba($color__white, 0.7) 20%, rgba($color__white, 0.7) 20%, rgba($color__white, 0.9) 40%, white 100%); 
+    background: -o-linear-gradient(top,  rgba($color__white, 0.012) 0, rgba($color__white, 0.7) 20%, rgba($color__white, 0.7) 20%, rgba($color__white, 0.9) 40%, white 100%);
+    background: -ms-linear-gradient(top,  rgba($color__white, 0.012) 0, rgba($color__white, 0.7) 20%, rgba($color__white, 0.7) 20%, rgba($color__white, 0.9) 40%, white 100%);
+    background: linear-gradient(to bottom, rgba($color__white, 0.012) 0, rgba($color__white, 0.7) 20%, rgba($color__white, 0.7) 20%, rgba($color__white, 0.9) 40%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.container-large-device {
+	@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+		max-width: 1000px;
+		margin: auto;
+	}
+	@media only screen and (min-width: 1200px) {
+		max-width: 1190px;
+		margin: auto;
+	}	
+	@media only screen and (min-width: 1500px) {
+		max-width: 1475px;
+		margin: auto;
+	}
+}
+.overview > ul > li {
+    background-color: $color__background-main;
+    border-radius: 5px;
+    color: $color__border-abbr;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 7px;
+    padding: 18px 0;
+    text-align: left;
+    -webkit-width: calc(50% - 5px);
+    width: calc(50% - 5px);
+    @media only screen and (max-width: 767px) {
+        width: 100%;
+    }
+    &:nth-child(2n+1) {
+        margin-right: 7px;
+        @media only screen and (max-width: 767px) {
+            margin-right: 0;                
+        }
+    }
+    i.fa {
+        font-size: 18px;
+        margin: -3px 20px 0;
+    }
+}

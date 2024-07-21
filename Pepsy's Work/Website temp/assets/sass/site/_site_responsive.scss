@@ -1,0 +1,205 @@
+/*--------------------------------------------------------------
+# Post Format Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width:768px) {
+	.content-area .format-quote .quote-thumb .quote-content {
+		padding: 2.8em 1em 1.2em !important;
+	}
+	.content-area .format-quote .quote-thumb .quote-content::before {
+		top: 16px;
+	}
+}
+@media only screen and (max-width:767px) {
+	#singlepage-layout-two .post-description {
+	    margin-top: -75px;
+	    padding: 15px;
+	}
+	#singlepage-layout-two .post-format {
+		margin-top: -35px;
+	}
+	#singlepage-layout-two .col-md-12 {
+		overflow: hidden;
+	}	
+	.single .post {
+		padding: 0 !important;
+	}
+	#singlepage-layout-two .post .col-sm-12 {
+		padding: 0;
+	}
+	#post-others {
+		padding: 0 15px;
+	}
+}
+@media only screen and (max-width: 482px) {
+	.content-area {
+		.post, .page {
+			padding: 1em;
+		}
+		.format-quote {
+			margin: 90px 10px 0 !important;
+		}
+		.format-quote blockquote p:first-child {
+			margin-top: 2.5em !important;
+		}
+		.format-quote .quote-icon a {
+			top: -70px;
+		}
+		.post-link-wrapper .tb-cell > a {
+			margin-bottom: 8px;
+		}
+		.format-aside .post-format {
+			margin-top: -45px;
+		}
+	}
+}
+@media only screen and (max-width: 475px) {
+	.content-area .post-link-wrapper .link-content {
+		padding-left: 15px;
+	}
+	.content-area .post-link-wrapper .icon-area {
+		padding: 45px 35px;
+	}
+	.content-area .post-link-wrapper .tb-cell > a {
+		text-overflow: inherit;
+	    white-space: normal;
+	}
+}
+@media only screen and (max-width: 440px) {
+	.content-area {
+		.post-link h2 {
+			font-size: 1em;
+			margin-bottom: 5px;
+		}
+	}
+}
+@media only screen and (max-width: 410px) {
+	.content-area .post-link-wrapper .icon-area {
+		padding: 45px 15px;
+	}
+	#singlepage-layout-two .post-description {
+	    margin-top: -45px;
+	}
+}
+/*--------------------------------------------------------------
+# Comment and Contact Form Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width: 991px) {
+	#contact_form {
+		.form-submit {
+			margin-bottom: 0;
+		}
+	}
+	.comment-respond .pd-right {
+		padding-right: 15px;
+	}
+	.comment-respond .pd-left {
+		padding-left: 15px;
+	}
+	.contact-respond {
+		.padding-right {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.padding-left-right {
+			padding-right: 0;
+			padding-left: 0;
+		}
+		.padding-left {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	#contact-form-wrap .col-md-12 {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.children {
+		margin-left: 40px !important;
+	}
+}
+/*--------------------------------------------------------------
+# About Page Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+	.about-me .entry-footer .follow-link {
+		margin-top: 75px;
+	}
+	.author-sign {
+		float: none !important;
+	}
+	.about-me .entry-footer .author-sign h3 {
+		text-align: left;
+	}
+}
+/*--------------------------------------------------------------
+# Contact Page Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width: 992px) { 
+	.contact-details .row {
+		margin: 0;
+	}
+	.contact-page #address-main::before {
+		margin-top: 0;
+	}
+	.contact-page .entry-content::after {
+		width: 0;
+	}
+}
+@media only screen and (max-width: 990px) {
+	.about-me #main,
+	.contact-page #main {
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.contact-page #contact-info .dl-horizontal dd {
+		margin-left: 0 !important;
+		margin-top: 4px;
+	}
+}
+
+@media only screen and (max-width: 615px) {
+	.contact-page #address-main {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 451px) {
+	.contact-page #address-main {
+		width: 60%;
+	}
+}
+
+/*--------------------------------------------------------------
+# 404 page Responsive
+--------------------------------------------------------------*/
+@media only screen and (max-width: 1199px) {
+	.go-button {
+		width: 100%;
+	}
+	.error-page .go-to:last-child {
+		right: 0;
+		top: 15px;
+	}
+}
+@media only screen and (max-width: 984px) {
+	.error-page .border-left {
+		display: none;
+	}
+}
+@media only screen and (max-width: 577px) {
+	.error-search {
+		top: 0 !important;
+	}
+	.error-page .go-to {
+		margin: 0 !important;
+	}
+}
+@media only screen and (max-width: 400px) {
+	.error-page .search-form .input-group button, 
+	.error-page .search-form .input-group input[type="button"], 
+	.error-page .search-form .input-group input[type="reset"], 
+	.error-page .search-form .input-group input[type="submit"] {
+		width: 40px !important;
+	}
+}

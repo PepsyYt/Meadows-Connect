@@ -1,14 +1,10 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-analytics.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
-// import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
-import { getFirestore, setDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
+import { getFirestore, setDoc, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyB3tfAA2Ly5ZJBHML8FaH5GpeA1tSoTXiY",
     authDomain: "login-register-society.firebaseapp.com",
@@ -22,8 +18,11 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+const auth = getAuth(); // Initialize auth
+const db = getFirestore(app); // Initialize Firestore
 
-// function to show message when registered or logged in
+
+// Function to show message when registered or logged in
 function showMessage(message, divId) {
     var messageDiv = document.getElementById(divId);
     messageDiv.style.display = 'block';
@@ -34,7 +33,37 @@ function showMessage(message, divId) {
     }, 5000);
 }
 
-// function to sign up the user with username email and password
+// logout function
+function logout() {
+    auth.signOut().then(() => {
+        localStorage.removeItem('loggedInUserId');
+        window.location.href = 'index.html';
+    }).catch((error) => {
+        console.log(error);
+    });
+}
+
+
+// // Function to handle UI changes based on authentication status
+// function updateUI(user) {
+//     const logRegElement = document.getElementById('log-reg-txt');
+//     // const user = auth.currentUser;
+//     if (user) {
+//         // User is signed in, hide the login/register link
+//         logRegElement.style.display = 'none';
+//     } else {
+//         // User is not signed in, show the login/register link
+//         logRegElement.style.display = 'block';
+//     }
+// }
+
+// // Listen for authentication state changes
+// onAuthStateChanged(auth, (user) => {
+//     updateUI(user);
+// });
+
+
+// Function to sign up the user with username, email, and password
 const signUp = document.getElementById('submit-signUp-email');
 signUp.addEventListener('click', async (event) => {
     event.preventDefault();
@@ -42,9 +71,6 @@ signUp.addEventListener('click', async (event) => {
     const username = document.getElementById('signup-username').value;
     const email = document.getElementById('signup-email').value;
     const password = document.getElementById('signup-password').value;
-
-    const auth = getAuth();
-    const db = getFirestore();
 
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -55,34 +81,28 @@ signUp.addEventListener('click', async (event) => {
             };
             showMessage('User Created', 'signUp-Message');
             const docRef = doc(db, "users", user.uid);
-            setDoc(docRef, userData)
-                .then(() => {
-                    window.location.href = 'index.html';
-                })
-                .catch((error) => {
-                    console.error("Error adding document", error);
-                })
+            return setDoc(docRef, userData);
+        })
+        .then(() => {
+            window.location.href = 'index.html';
         })
         .catch((error) => {
             const errorCode = error.code;
-            if (errorCode == 'auth/email-already-in-use') {
+            if (errorCode === 'auth/email-already-in-use') {
                 showMessage('Email already exists', 'signUp-Message');
+            } else {
+                showMessage('Unable to create user', 'signUp-Message');
             }
-            else {
-                showMessage('unable to create user', 'signUp-Message');
-            }
-        })
-})
+        });
+});
 
-// function to sign in the user with email and password
+// Function to sign in the user with email and password
 const signIn = document.getElementById('submit-signIn-email');
 signIn.addEventListener('click', async (event) => {
     event.preventDefault();
 
     const email = document.getElementById('signIn-email').value;
     const password = document.getElementById('signIn-password').value;
-
-    const auth = getAuth();
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -95,9 +115,8 @@ signIn.addEventListener('click', async (event) => {
             const errorCode = error.code;
             if (errorCode === 'auth/invalid-credential') {
                 showMessage('Incorrect Email or Password', 'signIn-Message');
+            } else {
+                showMessage('Account does not exist', 'signIn-Message');
             }
-            else {
-                showMessage('Account does not Exist', 'signIn-Message');
-            }
-        })
-})
+        });
+});

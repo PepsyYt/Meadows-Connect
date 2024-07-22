@@ -475,7 +475,13 @@
         		                                <textarea name="message" placeholder="Message" class="form-controller"></textarea>
         									</div><!-- /.form-group -->
         									<div class="form-group">
-        										<button type="submit" class="button default-template-gradient button-radius">Request Booking</button>
+        										<!-- <button type="submit" class="button default-template-gradient button-radius">Request Booking</button> -->
+                                                <button type="button" class="button default-template-gradient button-radius" onclick="redirectToBookingRequest()">Request Booking</button>
+                                                <script>
+                                                    function redirectToBookingRequest() {
+                                                      window.location.href = 'booking-details.html';
+                                                    }
+                                                </script>
         									</div><!-- /.form-group -->
         								</div><!-- /.form-content -->
         							</div><!-- /.form-bg -->

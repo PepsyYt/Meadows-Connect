@@ -33,15 +33,15 @@ function showMessage(message, divId) {
     }, 5000);
 }
 
-// logout function
-function logout() {
-    auth.signOut().then(() => {
-        localStorage.removeItem('loggedInUserId');
-        window.location.href = 'index.html';
-    }).catch((error) => {
-        console.log(error);
-    });
-}
+// // logout function
+// function logout() {
+//     auth.signOut().then(() => {
+//         localStorage.removeItem('loggedInUserId');
+//         window.location.href = 'index.html';
+//     }).catch((error) => {
+//         console.log(error);
+//     });
+// }
 
 
 // // Function to handle UI changes based on authentication status
@@ -109,7 +109,7 @@ signIn.addEventListener('click', async (event) => {
             showMessage('User Logged In', 'signIn-Message');
             const user = userCredential.user;
             localStorage.setItem('loggedInUserId', user.uid);
-            window.location.href = 'index.html';
+            window.location.href = 'home.html';
         })
         .catch((error) => {
             const errorCode = error.code;
